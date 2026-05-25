@@ -28,7 +28,7 @@ This module implements algorithms for computing hyper-triangles when new hypered
 - `HelperFunc.h` - Utility functions and data structure definitions
 - `read_data.cpp` - Data input/parsing functions
 - `NewHyperedge.txt` - Test data file containing new hyperedges to be inserted
-- `TriangleNumber.txt` - Output file for hyper-triangle counts
+- `TriangleNumber.txt` - input file for hyper-triangle counts before inserting
 - `unique-email-Enron.txt` - Enron email dataset used for testing
 
 **Algorithm Overview:**
@@ -61,10 +61,10 @@ This module implements algorithms for computing hyper-triangles when new vertice
 - `VIU+.cpp` - Optimized version of the Vertex Insertion Update algorithm
 - `HelperFunc.h` - Utility functions and pattern detection
 - `read_data.cpp` - Data loading functions
-- `NewVertices.txt` - File specifying which vertices to add to which hyperedges
-- `MarkTable.txt` - Table marking affected hyperedges
-- `PreRecordedTable.txt` - Pre-computed structure for optimization
-- `TriangleNumber.txt` - Output file for hyper-triangle counts
+- `NewVertices.txt` - File specifying which vertices to add to which hyperedges 
+- `MarkTable.txt` - Table marking affected hyperedges as decribed in the paper
+- `PreRecordedTable.txt` - Pre-recorded table as decribed in the paper
+- `TriangleNumber.txt` - input file for hyper-triangle counts before inserting
 - `unique-email-Enron.txt` - Enron email dataset
 
 **Algorithm Overview:**
@@ -102,7 +102,7 @@ This module implements algorithms for computing hyper-triangles when hyperedges 
 - `HelperFunc.h` - Utility functions for deletion operations
 - `read_data.cpp` - Data input functions
 - `DeleteHyperedge.txt` - File containing IDs of hyperedges to be deleted
-- `TriangleNumber.txt` - Output file for hyper-triangle counts
+- `TriangleNumber.txt` - input file for hyper-triangle counts before deleting
 - `unique-email-Enron.txt` - Enron email dataset
 
 **Algorithm Overview:**
@@ -138,7 +138,7 @@ This module implements algorithms for computing hyper-triangles when vertices ar
 - `HelperFunc.h` - Utility functions for vertex deletion
 - `read_data.cpp` - Data loading functions
 - `DeleteVertices.txt` - File specifying which vertices to delete
-- `TriangleNumber.txt` - Output file for hyper-triangle counts
+- `TriangleNumber.txt` - input file for hyper-triangle counts before deleting
 - `unique-email-Enron.txt` - Enron email dataset
 
 **Algorithm Overview:**
