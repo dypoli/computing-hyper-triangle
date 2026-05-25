@@ -138,7 +138,7 @@ int main(int argc, char *argv[])
 
 
 
-	string TrianglNum= "TriangleNumber";
+	string TrianglNum= "TriangleNumber.txt";
 	vector<int> h_triangle=ReadTriangleFile(TrianglNum); 
 
 
