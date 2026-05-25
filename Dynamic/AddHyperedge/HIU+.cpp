@@ -30,12 +30,9 @@ int main(int argc, char *argv[])
 	int progress;
 
     
-    string dataName = "unique-high-primary-school.txt";
+   string dataName = "unique-email-Enron.txt";
 
-    string graphFile =
-        "C:\\AllCode\\Triangle Counting\\HyperedgeAdd\\Updated_Dataset\\"
-        + dataName;
-    // ==============================
+    string graphFile =dataName;
 
 
 	// Read data
@@ -134,14 +131,15 @@ int main(int argc, char *argv[])
     cout << "------------------------------------------" << endl << endl;
 
 	vector< vector<int> > hyperedge_new(E);
-	string updateVertex = "C:\\AllCode\\Triangle Counting\\HyperedgeAdd\\Input_Data\\AffectedHE_"+dataName;
+	string updateVertex = "NewHyperedge.txt";
 	Load_New_Hyperedges(updateVertex, hyperedge_new);
 
 
 
 
-	string TrianglNum2= "C:\\AllCode\\Triangle Counting\\HyperedgeAdd\\Input_Data\\TriangleNum2_"+dataName;
-	vector<int> h_triangle=ReadTriangleFile(TrianglNum2); 
+	string TrianglNum= "TriangleNumber.txt";
+	vector<int> h_triangle=ReadTriangleFile(TrianglNum); 
+
 
 
 
@@ -400,11 +398,7 @@ int main(int argc, char *argv[])
   
    
 
-	cout<<"h_triangle:"<<endl;
-	for(int i=0; i<h_triangle.size(); i++){
-		cout<<h_triangle[i]<<" ";
-	}
-	cout<<endl;
+
 
 
     cout << "update time.\n"
